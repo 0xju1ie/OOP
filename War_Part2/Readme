@@ -1,0 +1,16 @@
+Part 2
+War (card game)
+
+The objetive of the game is to win all the cards. The cards are compared purely by ranks.
+The player with the higher ranking card takes both cards. If the players play the same 
+rank, then war happens. In war the players will each draw 3 cards, placing them face down, 
+and the fourth card will be played. Winner of that takes all cards! This goes on until one
+player is out of cards.
+
+This program is abstacted into a few parts. The cards are created in cards.cpp/.hpp. 
+The player's hands (individual decks), making of the deck, and shuffling of the deck, and more
+are handled in hand.cpp/.hpp. The game itself is handled in game.cpp/.hpp, and main.cpp 
+just starts the game.
+
+Chnages were made to the program to implement a compact representation of the card class by 
+representing the suit and rank as bits in an 8-bit integer.
