@@ -1,5 +1,6 @@
 #include <SFML/Graphics.hpp>
 #include <time.h>
+#include "ResourcePath.hpp"
 using namespace sf;
 
 struct point
@@ -15,11 +16,12 @@ main()
   RenderWindow app(VideoMode(400, 533), "Doodle Game!");
   app.setFramerateLimit(60);
 
-  Texture t1, t2, t3;
-  t1.loadFromFile("images/background.png");
-  t2.loadFromFile("images/platform.png");
-  t3.loadFromFile("images/doodle.png");
-
+    
+    Texture t1,t2,t3;
+    t1.loadFromFile(resourcePath() + "background.png");
+    t2.loadFromFile(resourcePath() + "platform.png");
+    t3.loadFromFile(resourcePath() + "doodle.png");
+    
   Sprite sBackground(t1), sPlat(t2), sPers(t3);
 
   point plat[20];

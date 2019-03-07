@@ -2,7 +2,7 @@
 //  game.hpp
 //  War
 //
-//  Created by Aichinger,Julie on 2/25/19.
+//  Created by Aichinger,Julie.
 //  Copyright © 2019 Aichinger,Julie. All rights reserved.
 //
 
