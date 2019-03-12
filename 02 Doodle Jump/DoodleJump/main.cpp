@@ -13,6 +13,9 @@ main()
 {
   srand(time(0));
 
+int x = 100, y = 100, h = 200;
+float dx = 0, dy = 0;
+
   RenderWindow app(VideoMode(400, 533), "Doodle Game!");
   app.setFramerateLimit(60);
 
@@ -31,8 +34,7 @@ main()
     plat[i].y = rand() % 533;
   }
 
-  int x = 100, y = 100, h = 200;
-  float dx = 0, dy = 0;
+  
 
   while (app.isOpen()) {
     Event e;
