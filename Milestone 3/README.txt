@@ -1,0 +1,1 @@
+In Milestone 3, I added the features of x-axis wrapping and the ability for the character to die. If the character falls below the y axis of the screen, and does not hit a platform, then the player has lost and the game will end. If the character goes off the screen on either horizontal side the character will appear on the other side, as if the x axis is wrapped in a circle.
